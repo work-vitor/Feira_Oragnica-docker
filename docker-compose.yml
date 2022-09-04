@@ -1,9 +1,9 @@
-version: "3.7"
+version: "2"
 
 services:
     # image project
-    Feira_organica:
-        container_name: feira-teste
+    app:
+        container_name: especializati-laravel
         build:
             context: .
             dockerfile: Dockerfile
@@ -19,7 +19,7 @@ services:
     
     # nginx
     nginx:
-        container_name: feira-nginx
+        container_name: especializati-laravel
         image: nginx:alpine
         restart: unless-stopped
         ports: 
